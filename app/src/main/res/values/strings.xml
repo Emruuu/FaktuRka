@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">FaktuRka</string>
+    <string-array name="vat_options">
+        <item>0</item>
+        <item>5</item>
+        <item>8</item>
+        <item>23</item>
+    </string-array>
 </resources>

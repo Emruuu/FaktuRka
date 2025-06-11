@@ -14,4 +14,10 @@ public class Client {
 
     public String nip;
     public String address;
+
+    @NonNull
+    @Override
+    public String toString() {
+         return name + " (NIP: " + nip + ")";
+    }
 }

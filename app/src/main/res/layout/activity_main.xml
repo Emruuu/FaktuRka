@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="FaktuRka – Panel Testowy"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/buttonAddClient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="➕ Dodaj klienta"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/buttonListClients"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📋 Lista klientów" />
+
+    <Button
+        android:id="@+id/buttonCreateInvoice"
+        android:text="🧾 Wystaw fakturę"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/buttonListInvoices"
+        android:text="🧾 Lista faktur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
