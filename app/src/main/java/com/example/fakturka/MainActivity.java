@@ -1,4 +1,4 @@
-package com.example.fakturka.ui.invoice;
+package com.example.fakturka;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,13 +6,15 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.fakturka.R;
 import com.example.fakturka.ui.client.AddClientActivity;
 import com.example.fakturka.ui.client.ClientListActivity;
+import com.example.fakturka.ui.common.SettingsActivity;
+import com.example.fakturka.ui.invoice.InvoiceListActivity;
+import com.example.fakturka.ui.invoice.NewInvoiceActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button buttonAddClient, buttonListClients, buttonListInvoices, buttonCreateInvoice;
+    private Button buttonAddClient, buttonListClients, buttonListInvoices, buttonCreateInvoice, buttonSettings;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +48,13 @@ public class MainActivity extends AppCompatActivity {
 
         buttonCreateInvoice.setOnClickListener(v -> {
             Intent intent = new Intent(this, NewInvoiceActivity.class);
+            startActivity(intent);
+        });
+
+        buttonSettings = findViewById(R.id.buttonSettings);
+
+        buttonSettings.setOnClickListener(v -> {
+            Intent intent = new Intent(this, SettingsActivity.class);
             startActivity(intent);
         });
     }
